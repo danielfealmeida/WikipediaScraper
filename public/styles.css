@@ -1,0 +1,51 @@
+:root {
+    --focus: 1;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+#website {
+    margin-left: 50%;
+    margin-top: 1%;
+    font-size: 20px;
+    border: 0px;
+    border-bottom: dotted 2px green;
+    transform: translate(-50%);
+    background-color: transparent;
+}
+
+#website:focus {
+    --focus: 0;
+}
+
+#website::placeholder {
+    opacity: var(--focus);
+}
+
+.card-container {
+    margin-left: 53%;
+    transform: translate(-50%);
+}
+
+#card {    
+    height: 600px;  
+    width: 500px; 
+    background-color: white;
+    margin: 50px;
+    border: dotted 6px green;
+    text-align: center;
+}
+
+#paragraph {
+    margin: 50px;
+    text-align: justify;
+}
+
+#btn {
+    position: absolute;
+    left: 48%;
+    top: 8%
+}
